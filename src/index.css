@@ -1,14 +1,46 @@
+:root {
+	--main-color: #ffe44d;
+}
+
 body {
 	margin: 0;
 	font-family: "Nunito", "Arial", "Helvetica", sans-serif;
-	
 }
-#root {
-	min-height: 100vh;
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cards-container {
+	max-width: 800px;
+	margin: auto;
+	padding: 20px;
 	display: grid;
-	grid-template-rows: 100px auto 70px;
+	grid-template-columns: repeat(1,auto);
+	gap: 30px;
 }
-header, footer {
-	background: #222;
-	color: #fff;
+
+.wrapper {
+	min-height: 100vh;
+	align-content: center;
+}
+
+.ad-block {
+	display: grid;
+	justify-content: space-evenly;
+	align-items: center;
+	grid-template-columns: repeat(2, auto);
+	height: 150px;
+	width: 100%;
+	border-radius: 15px;
+	margin: 10px;
+}
+
+.catalogue__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 10px ;
 }

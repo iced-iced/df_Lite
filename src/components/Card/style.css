@@ -1,0 +1,36 @@
+.MyCard {
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    padding: 10px;
+    display: grid;
+
+}
+
+.card__img {
+    height: 11rem;
+    background: no-repeat center / contain;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.card__price{
+    font-weight: 800;
+}
+
+.card__text{
+    font-size: 13px;
+}
+
+.btn {
+    width: max-content;
+    border: none;
+    margin-top: 6px;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: 800;
+    background-color: var(--main-color);
+    height: max-content;
+    align-self: flex-end;
+}
