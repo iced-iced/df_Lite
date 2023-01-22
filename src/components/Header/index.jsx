@@ -21,7 +21,7 @@ export default ({products, update}) => {
         }
     }
     return <>
-    <header>
+    <header className="my-2">
         <Logo/>
         <input type="search" placeholder="Поиск..." value={text} onChange={handler}/>
         <nav>

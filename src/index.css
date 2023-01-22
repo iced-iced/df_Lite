@@ -27,15 +27,16 @@ a {
 }
 
 .ad-block {
-	display: grid;
-	justify-content: space-evenly;
+	display: flex;
+	max-width: 100%;
 	align-items: center;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(4, auto);
 	height: 150px;
 	width: 100%;
 	border-radius: 15px;
 	margin: 10px;
 }
+
 
 .catalogue__header {
 	display: flex;

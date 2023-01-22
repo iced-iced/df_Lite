@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Col} from "react-bootstrap";
+import {Row, Col, Card} from "react-bootstrap";
 
 
 const Block = ({pic, bg, caption, text}) => {
@@ -10,13 +10,15 @@ const Block = ({pic, bg, caption, text}) => {
         backgroundColor: bg
     };
     return <>
-        <Row style={style} className="ad-block">
-            <Col xs={8}>
+        <Row style={style} className="my-2 mx-1">
+            <Col xs={8} className="my-4" md="8">
+            <Card style={{ height: '90%', width: '70%'}}>
             <h3>{caption}</h3>
             <p>{text}</p>
+            </Card>
             </Col>
-            <Col xs={4}>
-            <img src={pic} alt={caption} style={{ width: '10rem' }}/>
+            <Col xs={3}>
+            <img src={pic} alt={caption} style={{ height: '80%', width: '100%'}} className="mt-3"/>
             </Col>
         </Row>
     </>

@@ -2,8 +2,9 @@ import React from "react";
 import Logo from "../logo";
 import "./style.css";
 
+
 export default () => {
-    return <footer>
+    return <footer className="my-2">
         <Logo/>
         <span className="copyright">&copy;{new Date().getFullYear()}DogFood.ru</span>
         <a href="">Lorem.</a>
