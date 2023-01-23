@@ -22,7 +22,6 @@ export default () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             setGoods(data.products);
             setData(data.products) 
         });

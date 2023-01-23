@@ -96,7 +96,7 @@ const Product = ({token}) => {
                     <tbody>
                         {product.wight && <tr>
                             <th>Вес</th>
-                            <td>{product.wight} г</td>
+                            <td>{product.wight} </td>
                         </tr>}
                         {product.price && <tr>
                             <th>Цена</th>
@@ -114,7 +114,7 @@ const Product = ({token}) => {
                 {product.reviews && product.reviews.map(el => <div className="my-4" key={el._id}>
                         {el.rating && <h5>{"★".repeat(el.rating)}{"☆".repeat(5 - el.rating)}</h5>}
                         {el.text && <p className="my-2">{el.text}</p>}
-                        <div className="text-secondary text-small">{new Date(el.created_at).toLocaleString}</div>
+                        <div className="text-secondary text-small">{new Date(el.created_at).toLocaleString()}</div>
                 </div>)}
             </Col>
         </Row>
