@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import {Container, Row, Col } from "react-bootstrap";
-import {Routes, Link, Route} from "react-router-dom";
+import {Container} from "react-bootstrap";
+import {Routes, Route} from "react-router-dom";
 import Main from "./Pages/Main";
 import Catalogue from "./Pages/Catalogue"
 import Header from "./components/Header";

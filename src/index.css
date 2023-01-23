@@ -30,13 +30,11 @@ a {
 	display: flex;
 	max-width: 100%;
 	align-items: center;
-	grid-template-columns: repeat(4, auto);
 	height: 150px;
 	width: 100%;
 	border-radius: 15px;
 	margin: 10px;
 }
-
 
 .catalogue__header {
 	display: flex;
@@ -44,4 +42,13 @@ a {
 	align-items: center;
 	margin-top: 20px;
 	margin-bottom: 10px ;
+}
+
+@media (max-width: 1060px) {
+    .ad-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3px calc(60% - 500px);
+    }
 }
