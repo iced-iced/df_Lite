@@ -18,7 +18,7 @@ const Block = ({pic, bg, caption, text}) => {
             </Card>
             </Col>
             <Col xs={3}>
-            <img src={pic} alt={caption} style={{ height: '80%', width: '100%'}} className="mt-3"/>
+            <img src={pic} alt={caption} style={{ height: '80%', width: '50%'}} className="mt-3"/>
             </Col>
         </Row>
     </>
