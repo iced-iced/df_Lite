@@ -10,20 +10,18 @@ const Block = ({pic, bg, caption, text}) => {
         backgroundColor: bg
     };
     return <>
-        <Row style={style} className="my-2 mx-1">
-            <Col xs={8} className="my-4" md="8">
-            <Card style={{ height: '90%', width: '70%'}}>
-            <h3>{caption}</h3>
-            <p>{text}</p>
-            </Card>
+        <Row style={style} className="ad-block justify-content-center">
+            <Col xs={8} md={9}>
+                <Card style={{ height: '90%', width: '65%'}}>
+                <h3>{caption}</h3>
+                <p>{text}</p>
+                </Card>
             </Col>
-            <Col xs={3}>
-            <img src={pic} alt={caption} style={{ height: '80%', width: '50%'}} className="mt-3"/>
+            <Col xs={4} md={2}>
+                 <img src={pic} alt={caption} style={{ height: '100%', width: '110%'}} className="mt-1" md={1}/>
             </Col>
         </Row>
     </>
 }
 
 export default Block;
-
-const ads = ["https://w7.pngwing.com/pngs/829/872/png-transparent-drawing-coloring-book-painting-bone-painting-white-text-hand.png", "https://w7.pngwing.com/pngs/837/158/png-transparent-white-and-brown-dog-art-pet-sitting-happy-animals-dog-animals-in-spanish-white-beard-dog-game-mammal-food.png", "https://w7.pngwing.com/pngs/600/7/png-transparent-dog-cat-food-junk-food-color-cat-food-color-splash-food-animals.png"]
